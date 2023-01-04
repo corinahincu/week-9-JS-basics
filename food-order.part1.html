@@ -1,0 +1,49 @@
+<!--  
+  WHAT IS DATA TYPE?
+
+  BASIC TYPES TO START WITH
+  * BOOLEN  !!
+  * NUMBER  !!
+  * STRING  !!
+  * ARRAY
+  * OBJECT
+  ...
+
+  SPECIAL TYPES 
+  * UNDEFINED   !!
+  * NULL        !!
+  * NaN         !!
+  ...
+-->
+
+<script>
+  //IN : our app asks the user for the desired quantity
+  //FACT : we know the price for each item
+  //OUT: total cost
+
+  //data 
+  foodName       = "Salad"   //STRING
+  foodPriceValue = 15.00    //NUMBER
+
+  PriceUnits = "MDL"    //STRING
+
+  deliveryTax    = 10.00    //NUMBER
+
+  //alert( "We have" + foodName)
+  clientQuantity = prompt( 
+    "MENU\n\n " + foodName + "\n" + foodPriceValue +  PriceUnits + "\n\nHow many?"
+  )
+
+  totalCost      = foodPriceValue * clientQuantity + deliveryTax
+
+  alert( 
+    "You've ordered: " + clientQuantity + 
+    "\nDelivery Tax: " + deliveryTax + PriceUnits +
+    "\nBill: " + totalCost + PriceUnits 
+    
+  )
+  //alert( "bill " + totalCost + foodPriceUnits )
+
+  //HW1: apply a delivery tax 
+</script>
+
