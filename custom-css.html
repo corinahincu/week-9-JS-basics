@@ -1,0 +1,34 @@
+<script>
+  // display a square with color + size from prompt()
+  color  = prompt("Enter color name or code")
+  size   = prompt("Enter size in pixels")
+  borderWidth = prompt("Enter border width in pixels")
+  borderStyle = prompt("Enter border style")
+  borderColor = prompt("Enter border color")
+  
+  //border = prompt("Enter border width in pixels, than enter border color")
+
+  // !!! string
+  // "..."
+  // '...'
+  // `...` poti folosi interpolarea variabelor -> ${}
+
+  document.write(
+    
+  `<div style="
+      background: ${color}; 
+      width: ${size}px; 
+      height: ${size}px;
+      border-width: ${borderWidth}px;
+      border-style: ${borderStyle};
+      border-color: ${borderColor};
+      "
+    >
+        BOX 
+    </div>`
+  )
+
+  // HW : user -> prompt() -> border width, color
+
+</script>
+

@@ -1,0 +1,21 @@
+<script>
+  batteryCharge = 70            // %  <--- variable
+
+FULL_BATTERY  = 100          // %
+chargePercentInMinutes = 10  // 1% - 10 minutes
+
+etWorkInMinutes        = batteryCharge * chargePercentInMinutes
+
+//display functions
+alert( "remaining time (minutes)" +  etWorkInMinutes )  //plain text
+
+// "remaining time (minutes)" - string
+
+// HW1 : calculate in hours
+
+chargePercentInHours = 0.1666666667 // 10 minutes in hours
+
+etWorkInHours        = batteryCharge * chargePercentInHours 
+
+alert( "remaining time (hours)" + etWorkInHours)
+</script>

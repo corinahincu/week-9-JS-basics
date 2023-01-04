@@ -1,0 +1,32 @@
+<!--   
+  IN : our script reads the child content width, padding, border, margin in pixels also the script reads the parent content width
+  FACT: we know the mode of the box-sizing (content/border) and the formula
+  OUT: print the total width of the child, print if it fits, print the overflow offset
+
+  <div> - parent
+    <div></div> - child
+  </div>
+
+  unit - px
+
+  HW: print how much overflow in px?
+-->
+
+<script>
+  childWidth   = 100 // daca schimb latimea, spre exemplu "20", atunci raspunsul la overflow ar fi "false"
+  childPadding = 10
+  childBorder  = 1
+  childMargin  = 20
+
+  parentWidth  = 110
+
+  childSize    = childWidth + (childPadding + childBorder + childMargin) * 2
+  overflow     = childSize > parentWidth // este oare child size mai mare decit parentWidth , semnul dat ">" este citit ca "daca". si daca va fi , atunci raspunsul ar fi "true" -> tip de data boolean.
+
+  childOverflowOffset = childSize - parentWidth
+
+  alert("Horizontal child size" + childSize + "px")
+  alert("child overflow" + overflow)
+
+  alert("child overflow offset" + childOverflowOffset + "px" )
+</script>
